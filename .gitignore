@@ -1,0 +1,119 @@
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+
+
+*.__pycache__
+*.pyc
+*.pyo
+.installed.cfg
+bin
+develop-eggs
+dist
+downloads
+eggs
+parts
+src/*.egg-info
+*/__pycache__
+__pycache__/*
+migrations/*
+__pycache__
+*/migrations/__pycache__/
+*/users/__pycache__/*
+*/migrations/__pycache__/*
+*/auth/__pycache__/*
+*.apps/api/v1/auth/__pycache__/*
+*.apps/**/migrations
+/apps/**/migrations
+
+**/**/migrations
+*/migrations/__pycache__/*
+*/auth/__pycache__/*
+*.apps/api/v1/auth/__pycache__/*
+**/**/migrations
+**/migrations/
+**/**/**/migrations
+**/migrations/**
+!**/migrations
+!**/migrations/__init__.py
+_migrations/*
+!_migrations/__init__.py
+*.HuspyBackendService/media/**/*
+HuspyBackendService/media/**/*
+### OSX ###
+
+### SublimeText ###
+# cache files for sublime text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+
+# workspace files are user-specific
+*.sublime-workspace
+
+# project files should be checked into the repository, unless a significant
+# proportion of contributors will probably not be using SublimeText
+# *.sublime-project
+
+# sftp configuration file
+sftp-config.json
+
+# Basics
+*.py[cod]
+__pycache__
+
+# Logs
+logs
+*.log
+pip-log.txt
+npm-debug.log*
+
+# Unit test / coverage reports
+.coverage
+.tox
+nosetests.xml
+htmlcov
+
+# Translations
+*.mo
+*.pot
+
+# Pycharm
+.idea/*
+.pycharm_helpers/*
+
+
+# Vim
+
+*~
+*.swp
+*.swo
+
+# npm
+node_modules/
+
+# Compass
+.sass-cache
+
+# virtual environments
+.env
+munsons_env/
+# User-uploaded media
+apps/media/
+
+# static
+staticfiles/
+HuspyBackendService/static/
+
+# emails
+email_messages/
+
+.cache/
+
+.vagrant/
+
+*.sql
+
+
+
