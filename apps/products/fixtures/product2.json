@@ -1,0 +1,9 @@
+[
+{
+  "model": "products.producttwo",
+  "pk": 1,
+  "fields": {
+    "title": "p2"
+  }
+}
+]
