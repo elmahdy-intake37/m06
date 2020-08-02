@@ -44,3 +44,82 @@ You can install these with the following command:
   `python manage.py runserver`
 
 - Open a browser and go to http://127.0.0.1:8000
+
+Django Admin Access
+--------
+
+- Redirect to http://127.0.0.1:8000/admin
+
+ENDPOINT URL  
+--------
+
+`/swagger/`
+
+- to get all endpoints
+
+`/api/v1/auth/register`
+    - post request
+#### JSON
+
+```json
+{
+    "email": "string",
+    "first_name": "string",
+    "last_name":"string",
+    "password": "8 charcter"
+}
+```
+
+#### RESPONSE
+
+```json
+{
+    "id":"",
+    "email": "string",
+    "first_name": "string",
+    "last_name":"string",
+    "auth_token": "string"
+}
+```
+
+- In the header you will use **Token + value of token**
+- **ex.** Authorization **Token cc1fe3ddcb6a3f2550d5d2957e97acbccd2a892a**
+
+>`/api/v1/product/one/`
+`/api/v1/product/two/`
+- Get request
+
+each time user will visit one of these endpoint will be counted 
+
+`/api/v1/most_usage/`
+- Get request
+#### RESPONSE
+
+```json
+[{
+    "id":"",
+    "most_views_usage_name": "string",
+    "count": "int",
+},
+{
+    "id":"",
+    "most_views_usage_name": "string",
+    "count": "int",
+}]
+```
+
+> return list of views visited by user oreder by count **most of usage views**
+
+**rest of urls in swagger**
+> ex. /api/v1/login/
+/api/v1/changepassword/...
+
+## Running the tests
+
+`it will test trakc user`
+run the following,
+` python manage.py test apps.users.test.test_trackuser`
+
+
+
+
